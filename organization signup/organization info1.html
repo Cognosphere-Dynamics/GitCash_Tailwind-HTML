@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Information</title>
+    <title>Organization Information</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -73,51 +73,55 @@
       </header>
     <div class="flex items-center justify-center h-screen">
         <div class="max-w-4xl mx-auto">
-           <h1 class="text-4xl text-gray-900 mb-12">Sign up for GitCash</h1>
+           <h1 class="text-4xl text-gray-900 mb-12 mt-24">Sign up for GitCash</h1>
           
             <div class="grid md:grid-cols-2 gap-12">
                 <div class="space-y-8">
-                  <p class="text-cyan-500 text-2xl">Next Of Kin</p>
+                  <p class="text-cyan-500 text-2xl">Organization Information</p>
                     <form class="max-w-md mx-auto">
                         <div class="relative z-0 w-full mb-5 group ">
                             <input type="text" name="floating_name" id="floating_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
                             <label for="floating_name" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
-                              <i class="fa-solid fa-user mr-2"></i>Fullname
+                                <i class="fa-solid fa-building mr-2"></i>Company Name
                             </label>
                         </div>
                         <br>
                         <div class="relative z-0 w-full mb-5 group ">
-                            <input type="text" name="floating_name" id="floating_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
-                            <label for="floating_name" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
-                              <i class="fa-solid fa-users mr-2"></i>Relationship
+                            <input type="text" name="floating_text" id="floating_text" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                            <label for="floating_text" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
+                              <i class="fa-solid fa-credit-card mr-2"></i>Registration Number
                             </label>
                         </div>
                         <br>
                         <div class="relative z-0 w-full mb-5 group ">
-                            <input type="text" name="floating_phone1" id="floating_phone1" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
-                            <label for="floating_phone1" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
-                              <i class="fa-solid fa-phone mr-2"></i> Phone Number
+                            <input type="text" name="floating_status" id="floating_status" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                            <label for="floating_status" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
+                              <i class="fa-solid fa-file mr-2"></i>TIN
                             </label>
                         </div>
                         <br>
                         <div class="relative z-0 w-full mb-5 group ">
-                          <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
-                          <label for="floating_email" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
-                            <i class="fa-solid fa-envelope mr-2"></i>Email
+                          <input type="text" name="floating_status" id="floating_status" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                          <label for="floating_status" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
+                            <i class="fa-solid fa-phone mr-2"></i>Phone Number
                           </label>
-                      </div>
-                      <br>
+                        </div>
+                        <br>
                         <div class="relative z-0 w-full mb-5 group ">
-                          <input type="text" name="floating_address" id="floating_address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
-                          <label for="floating_address" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
-                            <i class="fa-solid fa-location-dot mr-2"></i> Address
+                          <input type="email" name="floating_status" id="floating_status" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                          <label for="floating_status" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
+                            <i class="fa-solid fa-envelope mr-2"></i>Email Address
                           </label>
-                      </div>
-                      <a href="National.html">
-                        <i class="fa-solid fa-arrow-left text-cyan-500 w-20"></i>
-                        </a>
-                        <a href="Address info.html">
-                            <i class="fa-solid fa-arrow-right text-cyan-500 w-20 ml-24"></i>
+                        </div>
+                        <br>
+                        <div class="relative z-0 w-full mb-5 group ">
+                          <input type="text" name="floating_status" id="floating_status" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                          <label for="floating_status" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">
+                            <i class="fa-solid fa-globe mr-2"></i>Website
+                          </label>
+                        </div>
+                        <a href="organization info2.html">
+                            <i class="fa-solid fa-arrow-right text-cyan-500 w-20"></i>
                         </a>
                     </form>
                 </div>
