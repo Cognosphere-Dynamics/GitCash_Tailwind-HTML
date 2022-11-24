@@ -5,27 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitCash Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+          @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .animate-scroll {
+            animation: scroll 20s linear infinite;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans">
-
-    <nav class="bg-white p-4 flex justify-between items-center">
-        <div class="text-xl font-bold">
-            <span class="text-blue-500">Git</span><span class="text-gray-800">Cash</span>
+    
+    <header class="bg-gray-900 text-white py-4 ">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="#" class="flex items-center space-x-2 ml-6">
+            <img src="images/logo-black.png" alt="GitCash Logo" class="h-8 w-auto">
+            <span class="text-3xl font-bold">GitCash</span>
+          </a>
+          <nav class="space-x-4 hidden md:block">
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Commercial Projects
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Websites</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Dashboards</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">APIs</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Android/IOS</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Desktop Apps</a>
+              </div>
+            </div>
+          
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Open Sources
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 1</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 2</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 3</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 4</a>
+              </div>
+            </div>
+          
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Enterprises
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 1</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 2</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 3</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 4</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 5</a>
+              </div>
+            </div>
+          
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Pricing</button>
+            </div>
+          </nav>
+          
+          <a href="Signup.html">
+          <button class="border-2 border-cyan-600 border-solid hover:bg-cyan-600 text-white px-4 py-2 rounded-md text-sm font-medium hidden md:block mr-8">
+            Sign up
+          </button>
+          </a>
         </div>
-        <ul class="flex space-x-4">
-            <li><a href="#" class="text-gray-800 hover:text-blue-500">Commercial Projects</a></li>
-            <li><a href="#" class="text-gray-800 hover:text-blue-500">Open Sourses</a></li>
-            <li><a href="#" class="text-gray-800 hover:text-blue-500">Enterprises</a></li>
-            <li><a href="#" class="text-gray-800 hover:text-blue-500">Pricing</a></li>
-        </ul>
-        <div>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Login
-            </button>
-        </div>
-    </nav>
+    </header>
 
-    <section class="bg-gray-200 py-20 text-center">
+    <section class="bg-gray-200 py-20 text-center" style="background image:(world-dotted-map.png)">
         <h1 class="text-5xl font-bold mb-4">Build your satisfying MVP fas</h1>
         <p class="text-lg mb-8">Email Address</p>
         <div class="flex justify-center">
@@ -91,118 +152,149 @@
             </div>
             
         </div>
-        <div class="mb-6 ml-120px">  <p class="text-5xl text-gray-600 mb-4">
-            Release your<br> company/business product<br>faster at no cost!
-        </p>
-    
-        <div>
-            <p class="text-lg font-medium text-gray-800">Faster market deployments</p>
-            <p class="text-lg font-medium text-gray-800">Guaranteed product efficiency</p>
-            <p class="text-lg font-medium text-gray-800">24/7 hourly support and upgrades</p>
-            <p class="text-lg font-medium text-gray-800">Opensource communities you can trust</p>
-        </div>
-    </div>
-        <div class="mt-8 text-center">
-            <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4 w-96">GitCash Enterprise →</p>
-        </div>
-
+       
+        
+        <div class="flex items-center max-w-7xl mx-auto px-4">
+            <!-- Image on the left -->
+            <div class="w-1/2 pr-8">
+                <img src="./images/profile.png" alt="Collaboration illustration" class="w-full h-auto rounded-full object-cover aspect-square">
+            </div>
+            
+                <!-- Text content on the right -->
+                <div class="w-1/2">
+                    <div class="mb-6">
+                        <p class="text-5xl text-gray-600 mb-4">
+                            Release your<br>company/business product<br>faster at no cost!
+                        </p>
+                        <div class="space-y-2">
+                            <p class="text-lg font-medium text-gray-800">Faster market deployments</p>
+                            <p class="text-lg font-medium text-gray-800">Guaranteed product efficiency</p>
+                            <p class="text-lg font-medium text-gray-800">24/7 hourly support and upgrades
+                            </p>
+                            <p class="text-lg font-medium text-gray-800">Opensource communites you can trust</p>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full max-w-md py-3 px-6 text-lg font-medium text-gray-500 border-2 border-cyan-500 rounded-full hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2">
+                        GitCash Developer 
+                        <span class="text-xl">→</span>
+                    </button>
+                </div>
+            </div>
         <div class="mt-8 text-center">
             <p class="text-lg text-gray-600">Trusted By:</p>
         </div>
         
 
-<div id="animation-carousel" class="relative w-full" data-carousel="static">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-200 ease-linear" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-black-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-black dark:text-gray-1000 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
-
-        <div class="mb-6 ml-120px">  <p class="text-5xl text-gray-600 mb-4">
-            Collaborate on community<br> impacting commercial<br>opensource projects
-        </p>
+        <div class="relative max-w-full overflow-hidden">
+            <!-- Main marquee container -->
+            <div class="flex gap-4 py-8">
+                <!-- First set of images -->
+                <div class="flex gap-4 animate-scroll">
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/e.jpg" alt="Forest" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/k.jpg" alt="City" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/k.jpg" alt="Bridge" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/t.jpg" alt="Waterfall" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/p.jpg" alt="Sunset" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/p.jpg" alt="Sky" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
     
-        <div>
-            <p class="text-lg font-medium text-gray-800">Your profile in the spotlight</p>
-            <p class="text-lg font-medium text-gray-800">Guaranteed finacial benefits</p>
-            <p class="text-lg font-medium text-gray-800">Work from anywhere, anytime</p>
-            <p class="text-lg font-medium text-gray-800">Tech community collaboration
-            </p>
+                    <!-- Duplicate set of images for seamless scrolling -->
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/n.jpg" alt="Forest" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/k.jpg" alt="City" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="./images/p.jpg" alt="Bridge" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/e.jpg" alt="Waterfall" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/e.jpg" alt="Sunset" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/e.jpg" alt="Sky" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flex items-center max-w-7xl mx-auto px-4">
+            <!-- Text content on the left -->
+            <div class="w-1/2">
+                <div class="mb-6">
+                    <p class="text-5xl text-gray-600 mb-4">
+                        Collaborate on community<br> impacting commercial<br>opensource projects
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-lg font-medium text-gray-800">Your profile in the spotlight</p>
+                        <p class="text-lg font-medium text-gray-800">Guaranteed finacial benefits</p>
+                        <p class="text-lg font-medium text-gray-800">Work from anywhere, anytime</p>
+                        <p class="text-lg font-medium text-gray-800">Tech community collaboration</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Image on the right -->
+            <div class="w-1/2 pl-8">
+                <img src="./images/dev.jpg" alt="Collaboration illustration" class="w-full h-auto rounded-full object-cover aspect-square">
+            </div>
+        </div>
+                
+        <button class="w-full max-w-md py-3 px-6 text-lg font-medium text-gray-500  border-2 border-cyan-500 rounded-full hover:bg-cyan-700 transition-colors flex items-center justify-center gap-2">
+            GitCash Developer 
+            <span class="text-xl">→</span>
+        </button>
+            </div>
         </div>
     </div>
-        <div class="mt-8 text-center">
-            <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4 w-96">GitCash Developer →</p>
-        </div>
-
-        <div class="mt-8 text-center">
-            <p class="text-lg text-gray-600">Trusted By:</p>
-        </div>
-    </div>
-    <div class="mb-6 ml-120px">  <div class="text-3xl text-gray-600 mb-4">
+    <div class="mb-6 ml-120px my-8">  <div class="text-3xl text-gray-600 mb-4">
     <p>Intelligent Productivity</p>
     <p class="text-cyan-700">AI Powered Commercial Opensource</p>
     <p>Our AI-powered platform increases the pace of software development.</p>
     </div>
-    <div class="relative flex justify-center">
-    <img src="./img/dashbaord.png">
+    <div class="relative w-full">
+        <img src="images/dashbaord.png" alt="dashboard" class="w-full">
+        <img src="images/main-dashboard.jpg" class="absolute bottom-0 right-0 max-w-md py-12">
     </div>
-    <div class="container mx-auto p-8">
+    
+   
+      <div class="container mx-auto p-8">
         <h1 class="text-3xl font-bold mb-4 text-center">Company Testimonials</h1>
         <div class="flex justify-center space-x-14 mb-6">
-            <div class="flex flext-col text-center">
-                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2">
+            <div class="flex flex-col items-center text-center">
+                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
                 <span class="font-medium">Cognosphere Dynamics LLC</span>
             </div>
-            <div class="flex flext-col text-center">
-                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2"> <span class="font-medium">Creative Solutions Ltd.</span>
-                
+            <div class="flex flex-col items-center text-center">
+                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
+                <span class="font-medium">Creative Solutions Ltd.</span>
             </div>
-            <div class="flex flext-col text-center">
-                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2">
+            <div class="flex flex-col items-center text-center">
+                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
                 <span class="font-medium">Digital Dynamics.</span>
             </div>
-            <div class=" flex flext-col text-center">
-                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2">
+            <div class="flex flex-col items-center text-center">
+                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
                 <span class="font-medium">Innovatech Solutions.</span>
             </div>
         </div>
+    </div>
+    
        
 
             <div class="flex items-center justify-between mb-6">
@@ -419,5 +511,6 @@
     </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
