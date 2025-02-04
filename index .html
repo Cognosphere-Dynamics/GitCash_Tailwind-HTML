@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitCash Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-white p-4 flex justify-between items-center">
+        <div class="text-xl font-bold">
+            <span class="text-blue-500">Git</span><span class="text-gray-800">Cash</span>
+        </div>
+        <ul class="flex space-x-4">
+            <li><a href="#" class="text-gray-800 hover:text-blue-500">Commercial Projects</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-blue-500">Open Sourses</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-blue-500">Enterprises</a></li>
+            <li><a href="#" class="text-gray-800 hover:text-blue-500">Pricing</a></li>
+        </ul>
+        <div>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Login
+            </button>
+        </div>
+    </nav>
+
+    <section class="bg-gray-200 py-20 text-center">
+        <h1 class="text-5xl font-bold mb-4">Build your satisfying MVP fas</h1>
+        <p class="text-lg mb-8">Email Address</p>
+        <div class="flex justify-center">
+            <input type="email" placeholder="yourname@mail.something" class="border border-gray-300 rounded-md px-4 py-2 w-96 mr-4">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4">
+                Signup for GitCash
+            </button>
+            <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded">
+                Enterprise SignUp
+            </button>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold mb-8">Most Paying Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="placeholder.png" alt="Project 1" class="mb-4"> 
+                <h3 class="text-xl font-bold mb-2">Python Data Analysis</h3>
+                <p class="text-gray-700 mb-4">A data analysis project using Python and Pandas...</p>
+                <div class="flex justify-between items-center">
+                    <p class="text-gray-600">1 month ago</p>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Contribute
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="placeholder.png" alt="Project 2" class="mb-4"> 
+                <h3 class="text-xl font-bold mb-2">Vue.js Admin Dashboard</h3>
+                <p class="text-gray-700 mb-4">An admin dashboard built using Vue.js...</p>
+                <div class="flex justify-between items-center">
+                    <p class="text-gray-600">2 months ago</p>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Contribute
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="placeholder.png" alt="Project 3" class="mb-4"> 
+                <h3 class="text-xl font-bold mb-2">Angular E-commerce F</h3>
+                <p class="text-gray-700 mb-4">An e-commerce platform built using Angular...</p>
+                <div class="flex justify-between items-center">
+                    <p class="text-gray-600">1 month ago</p>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Contribute
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <img src="placeholder.png" alt="Project 4" class="mb-4"> 
+                <h3 class="text-xl font-bold mb-2">Fullstack MERN App</h3>
+                <p class="text-gray-700 mb-4">A fullstack web app built using MongoDB, Express,...</p>
+                <div class="flex justify-between items-center">
+                    <p class="text-gray-600">3 months ago</p>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Contribute
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="mb-6 ml-120px">  <p class="text-5xl text-gray-600 mb-4">
+            Release your<br> company/business product<br>faster at no cost!
+        </p>
+    
+        <div>
+            <p class="text-lg font-medium text-gray-800">Faster market deployments</p>
+            <p class="text-lg font-medium text-gray-800">Guaranteed product efficiency</p>
+            <p class="text-lg font-medium text-gray-800">24/7 hourly support and upgrades</p>
+            <p class="text-lg font-medium text-gray-800">Opensource communities you can trust</p>
+        </div>
+    </div>
+        <div class="mt-8 text-center">
+            <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4 w-96">GitCash Enterprise →</p>
+        </div>
+
+        <div class="mt-8 text-center">
+            <p class="text-lg text-gray-600">Trusted By:</p>
+        </div>
+        
+
+<div id="animation-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-black-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-black dark:text-gray-1000 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+        <div class="mb-6 ml-120px">  <p class="text-5xl text-gray-600 mb-4">
+            Collaborate on community<br> impacting commercial<br>opensource projects
+        </p>
+    
+        <div>
+            <p class="text-lg font-medium text-gray-800">Your profile in the spotlight</p>
+            <p class="text-lg font-medium text-gray-800">Guaranteed finacial benefits</p>
+            <p class="text-lg font-medium text-gray-800">Work from anywhere, anytime</p>
+            <p class="text-lg font-medium text-gray-800">Tech community collaboration
+            </p>
+        </div>
+    </div>
+        <div class="mt-8 text-center">
+            <p class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4 w-96">GitCash Developer →</p>
+        </div>
+
+        <div class="mt-8 text-center">
+            <p class="text-lg text-gray-600">Trusted By:</p>
+        </div>
+    </div>
+    <div class="mb-6 ml-120px">  <div class="text-3xl text-gray-600 mb-4">
+    <p>Intelligent Productivity</p>
+    <p class="text-cyan-700">AI Powered Commercial Opensource</p>
+    <p>Our AI-powered platform increases the pace of software development.</p>
+    </div>
+    <div class="relative flex justify-center">
+    <img src="./img/dashbaord.png">
+    </div>
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4 text-center">Company Testimonials</h1>
+        <div class="flex justify-center space-x-14 mb-6">
+            <div class="flex flext-col text-center">
+                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2">
+                <span class="font-medium">Cognosphere Dynamics LLC</span>
+            </div>
+            <div class="flex flext-col text-center">
+                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2"> <span class="font-medium">Creative Solutions Ltd.</span>
+                
+            </div>
+            <div class="flex flext-col text-center">
+                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2">
+                <span class="font-medium">Digital Dynamics.</span>
+            </div>
+            <div class=" flex flext-col text-center">
+                <img src="./img/twitter.png" alt="Twitter Bird" class="w-7 h-auto mb-2">
+                <span class="font-medium">Innovatech Solutions.</span>
+            </div>
+        </div>
+       
+
+            <div class="flex items-center justify-between mb-6">
+              <div>
+                <h2 class="text-2xl font-bold text-gray-800">
+                    <p class="text-cyan-700">Cognosphere Dynamics</p> 
+                  <p class="text-cyan-700">LLC Efficiency with</p>
+                   New Workflow Tools
+                </h2>
+              </div>
+              
+            </div>
+          
+            <div class="mb-6">
+              <div class="bg-purple-100  rounded-lg p-4 mb-4 w-34">
+                <div class="flex items-center">
+                  <span class="text-4xl font-bold text-purple-800 mr-2">500,000</span>
+                  <span class="text-gray-600">successful deployments in the past year</span>
+                </div>
+              </div>
+              <div class="bg-purple-100 rounded-lg p-4 w-42">
+                <div class="flex items-center">
+                  <span class="text-4xl font-bold text-purple-800 mr-2">8,000</span>
+                  <span class="text-gray-600">active contributors</span>
+                </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-6">
+                <div class="flex items-center">
+              <p class="text-lg text-gray-800">
+                The new workflow tools have streamlined our processes and significantly improved our team's efficiency. The results speak for themselves with a remarkable increase in successful deployments."
+              </p>
+            </div>
+        
+          
+              <div class="mt-4">
+                <p class="font-medium text-gray-800">Francis Ssessaazi,</p>
+                <p class="text-gray-600">Chief Executive Officer</p>
+                <p class="text-gray-600">Cognosphere Dynamics LLC</p>
+              </div>
+            </div>
+            <div class="container mx-auto p-8">
+                <h1 class="text-3xl font-bold text-center mb-8">Developer Testimonials</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Bob Smith" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Bob Smith</h3>
+                                <p class="text-gray-600 text-sm">bob@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Fantastic experience! The solutions provided were innovative and perfectly aligned with our needs. Their professionalism and skillset exceeded all our expectations, ensuring a smooth and successful project.</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                <p class="text-gray-600 text-sm">alice@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Hank Martinez" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Hank Martinez</h3>
+                                <p class="text-gray-600 text-sm">hank@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Working with this team was a pleasure. Their proactive approach and timely delivery were greatly appreciated. Their solutions were both creative and effective, handling our project with the utmost care and attention.</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Frank Miller" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Frank Miller</h3>
+                                <p class="text-gray-600 text-sm">frank@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Exceptional service from start to finish! The developers were knowledgeable and efficient. Their solutions were both creative and effective, handling our project with the utmost care and attention.</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Carol Davis" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Carol Davis</h3>
+                                <p class="text-gray-600 text-sm">carol@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">[Carol's Testimonial]</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Grace Taylor" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Grace Taylor</h3>
+                                <p class="text-gray-600 text-sm">grace@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">[Grace's Testimonial]</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                <p class="text-gray-600 text-sm">alice@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                <p class="text-gray-600 text-sm">alice@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
+                    </div>
+        
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                <p class="text-gray-600 text-sm">alice@example.com</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
+                    </div>
+                </div>
+    
+          <div class=" max-w-4xl mx-autorelative flex flex-col h-screen justify-center items-center rounded">
+        <div>
+       
+<div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./img/payment.png" alt="">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            Unleash your development side with GitCash desktop!</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">HOur AI-powered platform increases the pace of software development
+            
+    </div>
+</div>
+
+    </section>
+
+    <footer class="bg-gray-100 py-8 px-16">
+        <div class="container mx-auto flex justify-between items-start">
+
+            <div class="text-left">
+                <div class="flex items-center mb-4">
+                    <img src="logo.png" alt="GitCash Logo" class="h-8 mr-2">
+                    <span class="text-xl font-bold">GitCash.</span>
+                </div>
+                <p class="mb-2">New Portbell Rd, Nakawa</p>
+                <p class="mb-2">Plot 19-21, P.O.Box 201025</p>
+                <p class="mb-2">Phone: 256 788 074869</p>
+                <p>Email: info@git-cash.com</p>
+                <div class="flex mt-4">
+                    <a href="#" class="mr-4"><img src="icon-x.png" alt="X Icon" class="h-6"></a>
+                    <a href="#" class="mr-4"><img src="icon-instagram.png" alt="Instagram Icon" class="h-6"></a>
+                    <a href="#"><img src="icon-linkedin.png" alt="LinkedIn Icon" class="h-6"></a>
+                </div>
+            </div>
+
+            <div class="text-left">
+                <h4 class="font-bold mb-4">Useful Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#">> Home</a></li>
+                    <li><a href="#">> About us</a></li>
+                    <li><a href="#">> Services</a></li>
+                    <li><a href="#">> Terms of service</a></li>
+                    <li><a href="#">> Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="text-left">
+                <h4 class="font-bold mb-4">Our Services</h4>
+                <ul class="space-y-2">
+                    <li><a href="#">> Web Design</a></li>
+                    <li><a href="#">> Web Development</a></li>
+                    <li><a href="#">> Product Management</a></li>
+                    <li><a href="#">> Marketing</a></li>
+                    <li><a href="#">> Graphic Design</a></li>
+                </ul>
+            </div>
+
+            <div class="text-left">
+                <h4 class="font-bold mb-4">Our Newsletter</h4>
+                <p class="mb-4">Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                <div class="flex">
+                    <input type="email" placeholder="Enter your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-md">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>&copy; Copyright Cognosphere Dynamics LLC All Rights Reserved</p>
+        </div>
+    </footer>
+        
+    </div>
+    </section>
+
+</body>
+</html>
