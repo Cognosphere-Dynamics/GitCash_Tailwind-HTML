@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitCash Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white-200 text-white">
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="#" class="flex items-center space-x-2 ml-6">
+            <img src="images/logo-black.png" alt="GitCash Logo" class="h-8 w-auto">
+            <span class="text-3xl font-bold">GitCash</span>
+          </a>
+          <nav class="space-x-4 hidden md:block">
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Commercial Projects
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Websites</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Dashboards</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">APIs</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Android/IOS</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Desktop Apps</a>
+              </div>
+            </div>
+          
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Open Sources
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 1</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 2</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 3</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 4</a>
+              </div>
+            </div>
+          
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Enterprises
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 1</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 2</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 3</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 4</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 5</a>
+              </div>
+            </div>
+          
+            <div class="relative inline-block">
+              <button class="hover:text-cyan-500 peer flex items-center">Pricing</button>
+            </div>
+          </nav>
+          
+          <a href="Signup.html">
+          <button class="border-2 border-cyan-600 border-solid hover:bg-cyan-600 text-white px-4 py-2 rounded-md text-sm font-medium hidden md:block mr-8">
+            Sign up
+          </button>
+          </a>
+        </div>
+      </header>
+    <div class="flex items-center justify-center h-screen">
+        <div class="max-w-md w-full space-y-8">
+            <h2 class="text-center text-4xl text-gray-900">Log in to GitCash</h2>
+            <form class="max-w-md mx-auto">
+                <div class="relative z-0 w-full mb-5 group ">
+                    <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                    <label for="floating_email" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">Email address</label>
+                </div>
+                <br>
+                <div class="relative z-0 w-full mb-5 group ">
+                    <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-cyan-600 peer" placeholder=" " required />
+                    <label for="floating_password" class="peer-focus:font-medium absolute text-xl text-gray-900 duration-300 transform -translate-y-10 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-10">Password</label>
+                </div>
+                <label class="inline-flex items-center mt-7 cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-cyan-300 after:border after:rounded-full after:w-4 after:h-4 after:transition-all  peer-checked:bg-cyan-600"></div>
+                    <p class="ms-3 text-sm font-medium text-gray-900">Remember me</p>
+                    <p class="text-gray-900 ml-24">No Account? <a href="Signup.html" class="text-cyan-500">  Signup</a></p>
+                </label>
+                <button type="submit" class="text-white bg-cyan-700 hover:bg-cyan-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center mt-5">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
