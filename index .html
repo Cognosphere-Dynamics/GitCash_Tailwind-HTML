@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,82 +8,89 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-          @keyframes scroll {
+        @keyframes scroll {
             0% {
                 transform: translateX(0);
             }
+
             100% {
                 transform: translateX(-50%);
             }
         }
+
         .animate-scroll {
             animation: scroll 20s linear infinite;
         }
     </style>
 </head>
+
 <body class="bg-gray-100 font-sans">
-    
+
     <header class="bg-gray-900 text-white py-4 ">
         <div class="container mx-auto flex justify-between items-center">
-          <a href="#" class="flex items-center space-x-2 ml-6">
-            <img src="images/logo-black.png" alt="GitCash Logo" class="h-8 w-auto">
-            <span class="text-3xl font-bold">GitCash</span>
-          </a>
-          <nav class="space-x-4 hidden md:block">
-            <div class="relative inline-block">
-              <button class="hover:text-cyan-500 peer flex items-center">Commercial Projects
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Websites</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Dashboards</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">APIs</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Android/IOS</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Desktop Apps</a>
-              </div>
-            </div>
-          
-            <div class="relative inline-block">
-              <button class="hover:text-cyan-500 peer flex items-center">Open Sources
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 1</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 2</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 3</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 4</a>
-              </div>
-            </div>
-          
-            <div class="relative inline-block">
-              <button class="hover:text-cyan-500 peer flex items-center">Enterprises
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 1</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 2</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 3</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 4</a>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 5</a>
-              </div>
-            </div>
-          
-            <div class="relative inline-block">
-              <button class="hover:text-cyan-500 peer flex items-center">Pricing</button>
-            </div>
-          </nav>
-          
-          <a href="Signup.html">
-          <button class="border-2 border-cyan-600 border-solid hover:bg-cyan-600 text-white px-4 py-2 rounded-md text-sm font-medium hidden md:block mr-8">
-            Sign up
-          </button>
-          </a>
+            <a href="#" class="flex items-center space-x-2 ml-6">
+                <img src="images/logo-black.png" alt="GitCash Logo" class="h-8 w-auto">
+                <span class="text-3xl font-bold">GitCash</span>
+            </a>
+            <nav class="space-x-4 hidden md:block">
+                <div class="relative inline-block">
+                    <button class="hover:text-cyan-500 peer flex items-center">Commercial Projects
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Websites</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Dashboards</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">APIs</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Android/IOS</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Desktop Apps</a>
+                    </div>
+                </div>
+
+                <div class="relative inline-block">
+                    <button class="hover:text-cyan-500 peer flex items-center">Open Sources
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 1</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 2</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 3</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Open Source 4</a>
+                    </div>
+                </div>
+
+                <div class="relative inline-block">
+                    <button class="hover:text-cyan-500 peer flex items-center">Enterprises
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="hidden peer-hover:block hover:block absolute bg-gray-900 w-48 rounded-md shadow-lg">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 1</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 2</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 3</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 4</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-800">Enterprise 5</a>
+                    </div>
+                </div>
+
+                <div class="relative inline-block">
+                    <button class="hover:text-cyan-500 peer flex items-center">Pricing</button>
+                </div>
+            </nav>
+
+            <a href="Signup.html">
+                <button
+                    class="border-2 border-cyan-600 border-solid hover:bg-cyan-600 text-white px-4 py-2 rounded-md text-sm font-medium hidden md:block mr-8">
+                    Sign up
+                </button>
+            </a>
         </div>
     </header>
 
@@ -90,7 +98,8 @@
         <h1 class="text-5xl font-bold mb-4">Build your satisfying MVP fas</h1>
         <p class="text-lg mb-8">Email Address</p>
         <div class="flex justify-center">
-            <input type="email" placeholder="yourname@mail.something" class="border border-gray-300 rounded-md px-4 py-2 w-96 mr-4">
+            <input type="email" placeholder="yourname@mail.something"
+                class="border border-gray-300 rounded-md px-4 py-2 w-96 mr-4">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4">
                 Signup for GitCash
             </button>
@@ -104,7 +113,7 @@
         <h2 class="text-3xl font-bold mb-8">Most Paying Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 1" class="mb-4"> 
+                <img src="placeholder.png" alt="Project 1" class="mb-4">
                 <h3 class="text-xl font-bold mb-2">Python Data Analysis</h3>
                 <p class="text-gray-700 mb-4">A data analysis project using Python and Pandas...</p>
                 <div class="flex justify-between items-center">
@@ -116,7 +125,7 @@
             </div>
 
             <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 2" class="mb-4"> 
+                <img src="placeholder.png" alt="Project 2" class="mb-4">
                 <h3 class="text-xl font-bold mb-2">Vue.js Admin Dashboard</h3>
                 <p class="text-gray-700 mb-4">An admin dashboard built using Vue.js...</p>
                 <div class="flex justify-between items-center">
@@ -128,7 +137,7 @@
             </div>
 
             <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 3" class="mb-4"> 
+                <img src="placeholder.png" alt="Project 3" class="mb-4">
                 <h3 class="text-xl font-bold mb-2">Angular E-commerce F</h3>
                 <p class="text-gray-700 mb-4">An e-commerce platform built using Angular...</p>
                 <div class="flex justify-between items-center">
@@ -140,7 +149,7 @@
             </div>
 
             <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 4" class="mb-4"> 
+                <img src="placeholder.png" alt="Project 4" class="mb-4">
                 <h3 class="text-xl font-bold mb-2">Fullstack MERN App</h3>
                 <p class="text-gray-700 mb-4">A fullstack web app built using MongoDB, Express,...</p>
                 <div class="flex justify-between items-center">
@@ -150,41 +159,43 @@
                     </button>
                 </div>
             </div>
-            
+
         </div>
-       
-        
+
+
         <div class="flex items-center max-w-7xl mx-auto px-4">
             <!-- Image on the left -->
             <div class="w-1/2 pr-8">
-                <img src="./images/profile.png" alt="Collaboration illustration" class="w-full h-auto rounded-full object-cover aspect-square">
+                <img src="./images/profile.png" alt="Collaboration illustration"
+                    class="w-full h-auto rounded-full object-cover aspect-square">
             </div>
-            
-                <!-- Text content on the right -->
-                <div class="w-1/2">
-                    <div class="mb-6">
-                        <p class="text-5xl text-gray-600 mb-4">
-                            Release your<br>company/business product<br>faster at no cost!
+
+            <!-- Text content on the right -->
+            <div class="w-1/2">
+                <div class="mb-6">
+                    <p class="text-5xl text-gray-600 mb-4">
+                        Release your<br>company/business product<br>faster at no cost!
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-lg font-medium text-gray-800">Faster market deployments</p>
+                        <p class="text-lg font-medium text-gray-800">Guaranteed product efficiency</p>
+                        <p class="text-lg font-medium text-gray-800">24/7 hourly support and upgrades
                         </p>
-                        <div class="space-y-2">
-                            <p class="text-lg font-medium text-gray-800">Faster market deployments</p>
-                            <p class="text-lg font-medium text-gray-800">Guaranteed product efficiency</p>
-                            <p class="text-lg font-medium text-gray-800">24/7 hourly support and upgrades
-                            </p>
-                            <p class="text-lg font-medium text-gray-800">Opensource communites you can trust</p>
-                        </div>
+                        <p class="text-lg font-medium text-gray-800">Opensource communites you can trust</p>
                     </div>
-                    
-                    <button class="w-full max-w-md py-3 px-6 text-lg font-medium text-gray-500 border-2 border-cyan-500 rounded-full hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2">
-                        GitCash Developer 
-                        <span class="text-xl">→</span>
-                    </button>
                 </div>
+
+                <button
+                    class="w-full max-w-md py-3 px-6 text-lg font-medium text-gray-500 border-2 border-cyan-500 rounded-full hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2">
+                    GitCash Developer
+                    <span class="text-xl">→</span>
+                </button>
             </div>
+        </div>
         <div class="mt-8 text-center">
             <p class="text-lg text-gray-600">Trusted By:</p>
         </div>
-        
+
 
         <div class="relative max-w-full overflow-hidden">
             <!-- Main marquee container -->
@@ -192,47 +203,59 @@
                 <!-- First set of images -->
                 <div class="flex gap-4 animate-scroll">
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="images/e.jpg" alt="Forest" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="images/e.jpg" alt="Forest"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/k.jpg" alt="City" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/k.jpg" alt="City"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/k.jpg" alt="Bridge" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/k.jpg" alt="Bridge"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/t.jpg" alt="Waterfall" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/t.jpg" alt="Waterfall"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/p.jpg" alt="Sunset" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/p.jpg" alt="Sunset"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/p.jpg" alt="Sky" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/p.jpg" alt="Sky"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
-    
+
                     <!-- Duplicate set of images for seamless scrolling -->
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/n.jpg" alt="Forest" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/n.jpg" alt="Forest"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/k.jpg" alt="City" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/k.jpg" alt="City"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="./images/p.jpg" alt="Bridge" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="./images/p.jpg" alt="Bridge"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="images/e.jpg" alt="Waterfall" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="images/e.jpg" alt="Waterfall"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="images/e.jpg" alt="Sunset" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="images/e.jpg" alt="Sunset"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                     <div class="w-72 h-48 flex-shrink-0 overflow-hidden rounded-lg">
-                        <img src="images/e.jpg" alt="Sky" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                        <img src="images/e.jpg" alt="Sky"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                     </div>
                 </div>
             </div>
         </div>
-    
+
         <div class="flex items-center max-w-7xl mx-auto px-4">
             <!-- Text content on the left -->
             <div class="w-1/2">
@@ -248,269 +271,290 @@
                     </div>
                 </div>
             </div>
-        
+
             <!-- Image on the right -->
             <div class="w-1/2 pl-8">
-                <img src="./images/dev.jpg" alt="Collaboration illustration" class="w-full h-auto rounded-full object-cover aspect-square">
+                <img src="./images/dev.jpg" alt="Collaboration illustration"
+                    class="w-full h-auto rounded-full object-cover aspect-square">
             </div>
         </div>
-                
-        <button class="w-full max-w-md py-3 px-6 text-lg font-medium text-gray-500  border-2 border-cyan-500 rounded-full hover:bg-cyan-700 transition-colors flex items-center justify-center gap-2">
-            GitCash Developer 
+
+        <button
+            class="w-full max-w-md py-3 px-6 text-lg font-medium text-gray-500  border-2 border-cyan-500 rounded-full hover:bg-cyan-700 transition-colors flex items-center justify-center gap-2">
+            GitCash Developer
             <span class="text-xl">→</span>
         </button>
-            </div>
         </div>
-    </div>
-    <div class="mb-6 ml-120px my-8">  <div class="text-3xl text-gray-600 mb-4">
-    <p>Intelligent Productivity</p>
-    <p class="text-cyan-700">AI Powered Commercial Opensource</p>
-    <p>Our AI-powered platform increases the pace of software development.</p>
-    </div>
-    <div class="relative w-full">
-        <img src="images/dashbaord.png" alt="dashboard" class="w-full">
-        <img src="images/main-dashboard.jpg" class="absolute bottom-0 right-0 max-w-md py-12">
-    </div>
-    
-   
-      <div class="container mx-auto p-8">
-        <h1 class="text-3xl font-bold mb-4 text-center">Company Testimonials</h1>
-        <div class="flex justify-center space-x-14 mb-6">
-            <div class="flex flex-col items-center text-center">
-                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
-                <span class="font-medium">Cognosphere Dynamics LLC</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
-                <span class="font-medium">Creative Solutions Ltd.</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
-                <span class="font-medium">Digital Dynamics.</span>
-            </div>
-            <div class="flex flex-col items-center text-center">
-                <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
-                <span class="font-medium">Innovatech Solutions.</span>
-            </div>
         </div>
-    </div>
-    
-       
+        </div>
+        <div class="mb-6 ml-120px my-8">
+            <div class="text-3xl text-gray-600 mb-4">
+                <p>Intelligent Productivity</p>
+                <p class="text-cyan-700">AI Powered Commercial Opensource</p>
+                <p>Our AI-powered platform increases the pace of software development.</p>
+            </div>
+            <div class="relative w-full">
+                <img src="images/dashbaord.png" alt="dashboard" class="w-full">
+                <img src="images/main-dashboard.jpg" class="absolute bottom-0 right-0 max-w-md py-12">
+            </div>
+
+
+            <div class="container mx-auto p-8">
+                <h1 class="text-3xl font-bold mb-4 text-center">Company Testimonials</h1>
+                <div class="flex justify-center space-x-14 mb-6">
+                    <a href="#">
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
+                            <span class="font-medium">Cognosphere Dynamics LLC</span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
+                            <span class="font-medium">Creative Solutions Ltd.</span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
+                            <span class="font-medium">Digital Dynamics.</span>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fab fa-twitter text-gray-500 text-2xl mb-2"></i>
+                            <span class="font-medium">Innovatech Solutions.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
 
             <div class="flex items-center justify-between mb-6">
-              <div>
-                <h2 class="text-2xl font-bold text-gray-800">
-                    <p class="text-cyan-700">Cognosphere Dynamics</p> 
-                  <p class="text-cyan-700">LLC Efficiency with</p>
-                   New Workflow Tools
-                </h2>
-              </div>
-              
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">
+                        <p class="text-cyan-700">Cognosphere Dynamics</p>
+                        <p class="text-cyan-700">LLC Efficiency with</p>
+                        New Workflow Tools
+                    </h2>
+                </div>
+
             </div>
-          
+
             <div class="mb-6">
-              <div class="bg-purple-100  rounded-lg p-4 mb-4 w-34">
-                <div class="flex items-center">
-                  <span class="text-4xl font-bold text-purple-800 mr-2">500,000</span>
-                  <span class="text-gray-600">successful deployments in the past year</span>
-                </div>
-              </div>
-              <div class="bg-purple-100 rounded-lg p-4 w-42">
-                <div class="flex items-center">
-                  <span class="text-4xl font-bold text-purple-800 mr-2">8,000</span>
-                  <span class="text-gray-600">active contributors</span>
-                </div>
-            </div>
-            <div class="bg-gray-100 rounded-lg p-6">
-                <div class="flex items-center">
-              <p class="text-lg text-gray-800">
-                The new workflow tools have streamlined our processes and significantly improved our team's efficiency. The results speak for themselves with a remarkable increase in successful deployments."
-              </p>
-            </div>
-        
-          
-              <div class="mt-4">
-                <p class="font-medium text-gray-800">Francis Ssessaazi,</p>
-                <p class="text-gray-600">Chief Executive Officer</p>
-                <p class="text-gray-600">Cognosphere Dynamics LLC</p>
-              </div>
-            </div>
-            <div class="container mx-auto p-8">
-                <h1 class="text-3xl font-bold text-center mb-8">Developer Testimonials</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Bob Smith" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Bob Smith</h3>
-                                <p class="text-gray-600 text-sm">bob@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Fantastic experience! The solutions provided were innovative and perfectly aligned with our needs. Their professionalism and skillset exceeded all our expectations, ensuring a smooth and successful project.</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
-                                <p class="text-gray-600 text-sm">alice@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Hank Martinez" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Hank Martinez</h3>
-                                <p class="text-gray-600 text-sm">hank@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Working with this team was a pleasure. Their proactive approach and timely delivery were greatly appreciated. Their solutions were both creative and effective, handling our project with the utmost care and attention.</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Frank Miller" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Frank Miller</h3>
-                                <p class="text-gray-600 text-sm">frank@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Exceptional service from start to finish! The developers were knowledgeable and efficient. Their solutions were both creative and effective, handling our project with the utmost care and attention.</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Carol Davis" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Carol Davis</h3>
-                                <p class="text-gray-600 text-sm">carol@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">[Carol's Testimonial]</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Grace Taylor" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Grace Taylor</h3>
-                                <p class="text-gray-600 text-sm">grace@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">[Grace's Testimonial]</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
-                                <p class="text-gray-600 text-sm">alice@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
-                                <p class="text-gray-600 text-sm">alice@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
-                    </div>
-        
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
-                            <div>
-                                <h3 class="text-lg font-semibold">Alice Johnson</h3>
-                                <p class="text-gray-600 text-sm">alice@example.com</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-800">Working with this team has been transformative. Their expertise and responsiveness are unparalleled. They consistently deliver high-quality results and make every project a success. Highly recommend their services!</p>
+                <div class="bg-purple-100  rounded-lg p-4 mb-4 w-34">
+                    <div class="flex items-center">
+                        <span class="text-4xl font-bold text-purple-800 mr-2">500,000</span>
+                        <span class="text-gray-600">successful deployments in the past year</span>
                     </div>
                 </div>
-    
-          <div class=" max-w-4xl mx-autorelative flex flex-col h-screen justify-center items-center rounded">
-        <div>
-       
-<div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="./img/payment.png" alt="">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Unleash your development side with GitCash desktop!</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">HOur AI-powered platform increases the pace of software development
-            
-    </div>
-</div>
+                <div class="bg-purple-100 rounded-lg p-4 w-42">
+                    <div class="flex items-center">
+                        <span class="text-4xl font-bold text-purple-800 mr-2">8,000</span>
+                        <span class="text-gray-600">active contributors</span>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6">
+                    <div class="flex items-center">
+                        <p class="text-lg text-gray-800">
+                            The new workflow tools have streamlined our processes and significantly improved our team's
+                            efficiency. The results speak for themselves with a remarkable increase in successful
+                            deployments."
+                        </p>
+                    </div>
 
+
+                    <div class="mt-4">
+                        <p class="font-medium text-gray-800">Francis Ssessaazi,</p>
+                        <p class="text-gray-600">Chief Executive Officer</p>
+                        <p class="text-gray-600">Cognosphere Dynamics LLC</p>
+                    </div>
+                </div>
+                <div class="container mx-auto p-8">
+                    <h1 class="text-3xl font-bold text-center mb-8">Developer Testimonials</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Bob Smith" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Bob Smith</h3>
+                                    <p class="text-gray-600 text-sm">bob@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">Fantastic experience! The solutions provided were innovative and
+                                perfectly aligned with our needs. Their professionalism and skillset exceeded all our
+                                expectations, ensuring a smooth and successful project.</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                    <p class="text-gray-600 text-sm">alice@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">Working with this team has been transformative. Their expertise and
+                                responsiveness are unparalleled. They consistently deliver high-quality results and make
+                                every project a success. Highly recommend their services!</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Hank Martinez" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Hank Martinez</h3>
+                                    <p class="text-gray-600 text-sm">hank@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">Working with this team was a pleasure. Their proactive approach and
+                                timely delivery were greatly appreciated. Their solutions were both creative and
+                                effective, handling our project with the utmost care and attention.</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Frank Miller" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Frank Miller</h3>
+                                    <p class="text-gray-600 text-sm">frank@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">Exceptional service from start to finish! The developers were
+                                knowledgeable and efficient. Their solutions were both creative and effective, handling
+                                our project with the utmost care and attention.</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Carol Davis" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Carol Davis</h3>
+                                    <p class="text-gray-600 text-sm">carol@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">[Carol's Testimonial]</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Grace Taylor" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Grace Taylor</h3>
+                                    <p class="text-gray-600 text-sm">grace@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">[Grace's Testimonial]</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                    <p class="text-gray-600 text-sm">alice@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">Working with this team has been transformative. Their expertise and
+                                responsiveness are unparalleled. They consistently deliver high-quality results and make
+                                every project a success. Highly recommend their services!</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <div class="flex items-center mb-4">
+                                <img src="placeholder.jpg" alt="Alice Johnson" class="w-12 h-12 rounded-full mr-3">
+                                <div>
+                                    <h3 class="text-lg font-semibold">Alice Johnson</h3>
+                                    <p class="text-gray-600 text-sm">alice@example.com</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800">Working with this team has been transformative. Their expertise and
+                                responsiveness are unparalleled. They consistently deliver high-quality results and make
+                                every project a success. Highly recommend their services!</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-teal-600 flex items-center justify-between p-6 rounded-b-lg mt-20">
+                        <div class="flex-shrink-0">
+                            <img src="images/payment.png" alt="payment" class="#">
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div>
+                                <h1 class="text-2xl font-bold text-white">Unleash your development side with GitCash
+                                    desktop!</h1>
+                                <p class="text-sm text-white">Our AI-powered platform increases the pace of software
+                                    development.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="bg-white text-teal-600 px-4 py-2 rounded hover:bg-gray-100">
+                            Download
+                        </button>
+                    </div>
+                    <!-- Footer -->
+                    <footer class="mt-10 grid grid-cols-4 gap-4 bg-black text-white p-8">
+                        <!-- Logo -->
+                        <div>
+                            <h2 class="text-xl font-bold">GitCash.</h2>
+                            <p class="text-sm mt-2">New Portbel Rd, Nakawa</p>
+                            <p class="text-sm">Plot 19-21, P.O.Box 20005</p>
+                            <p class="text-sm mt-2">Phone: +256 788 078809</p>
+                            <p class="text-sm">Email: info@git-cash.com</p>
+                            <!-- Social Icons -->
+                            <div class="flex justify-center space-x-4 mt-4 pb-4">
+                                <a href="#" class="hover:text-teal-400"><i class="fab-fa-twitter mr-2"></i></a>
+                                <a href="#" class="hover:text-teal-400">Facebook</a>
+                                <a href="#" class="hover:text-teal-400">Instagram</a>
+                                <a href="#" class="hover:text-teal-400">LinkedIn</a>
+                            </div>
+                        </div>
+
+                        <!-- Useful Links -->
+                        <div>
+                            <h3 class="font-semibold mb-4">Useful Links</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="hover:text-teal-400">Home</a></li>
+                                <li><a href="#" class="hover:text-teal-400">About us</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Services</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Terms of service</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Privacy policy</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Our Services -->
+                        <div>
+                            <h3 class="font-semibold mb-4">Our Services</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="hover:text-teal-400">Web Design</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Web Development</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Product Management</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Marketing</a></li>
+                                <li><a href="#" class="hover:text-teal-400">Graphic Design</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div>
+                            <h3 class="font-semibold mb-4">Our Newsletter</h3>
+                            <p class="text-sm mb-4">Subscribe to our newsletter and receive the latest news about our
+                                products and services!</p>
+                            <div class="flex">
+                                <input type="email" placeholder="Your email" class="flex-grow p-2 text-black rounded-l">
+                                <button class="bg-teal-600 text-white px-4 py-2 rounded-r hover:bg-teal-700">
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                <p class="text-sm text-center">© Copyright Cognosphere Dynamics LLC All Rights Reserved</p>
+                </footer>
     </section>
-
-    <footer class="bg-gray-100 py-8 px-16">
-        <div class="container mx-auto flex justify-between items-start">
-
-            <div class="text-left">
-                <div class="flex items-center mb-4">
-                    <img src="logo.png" alt="GitCash Logo" class="h-8 mr-2">
-                    <span class="text-xl font-bold">GitCash.</span>
-                </div>
-                <p class="mb-2">New Portbell Rd, Nakawa</p>
-                <p class="mb-2">Plot 19-21, P.O.Box 201025</p>
-                <p class="mb-2">Phone: 256 788 074869</p>
-                <p>Email: info@git-cash.com</p>
-                <div class="flex mt-4">
-                    <a href="#" class="mr-4"><img src="icon-x.png" alt="X Icon" class="h-6"></a>
-                    <a href="#" class="mr-4"><img src="icon-instagram.png" alt="Instagram Icon" class="h-6"></a>
-                    <a href="#"><img src="icon-linkedin.png" alt="LinkedIn Icon" class="h-6"></a>
-                </div>
-            </div>
-
-            <div class="text-left">
-                <h4 class="font-bold mb-4">Useful Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#">> Home</a></li>
-                    <li><a href="#">> About us</a></li>
-                    <li><a href="#">> Services</a></li>
-                    <li><a href="#">> Terms of service</a></li>
-                    <li><a href="#">> Privacy policy</a></li>
-                </ul>
-            </div>
-            <div class="text-left">
-                <h4 class="font-bold mb-4">Our Services</h4>
-                <ul class="space-y-2">
-                    <li><a href="#">> Web Design</a></li>
-                    <li><a href="#">> Web Development</a></li>
-                    <li><a href="#">> Product Management</a></li>
-                    <li><a href="#">> Marketing</a></li>
-                    <li><a href="#">> Graphic Design</a></li>
-                </ul>
-            </div>
-
-            <div class="text-left">
-                <h4 class="font-bold mb-4">Our Newsletter</h4>
-                <p class="mb-4">Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                <div class="flex">
-                    <input type="email" placeholder="Enter your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none">
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-md">Subscribe</button>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-8">
-            <p>&copy; Copyright Cognosphere Dynamics LLC All Rights Reserved</p>
-        </div>
-    </footer>
-        
-    </div>
-    </section>
-
     <script src="script.js"></script>
 </body>
+
 </html>
