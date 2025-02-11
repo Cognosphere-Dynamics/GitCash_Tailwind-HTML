@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .activity-graph {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+        }
+        .activity-bar {
+            width: 10px;
+            background-color: lightgray;
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+        }
+        .activity-bar.high {
+            height: 40px;
+            background-color: teal;
+        }
+        .activity-bar.medium {
+            height: 30px;
+            background-color: teal;
+        }
+        .activity-bar.low {
+            height: 20px;
+            background-color: teal;
+        }
+        .activity-bar.none {
+            height: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body class="p-8 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        <h3 class="text-4xl text-teal-800 mb-4">Most Active Contributors</h3>
+        <div id="contributors-list" class="space-y-4"></div>
+        
+        <button id="view-all" class="mt-6 bg-gray-300 text-gray-700 text-center font-bold px-4 py-2 rounded-md block w-full hover:bg-gray-400 transition-colors">
+            View All
+        </button>
+    </div>
+
+    <script>
+        const peopleDetails = [
+            {
+                name: "Erick Juma",
+                imageUrl: "https://picsum.photos/200?random=1",
+                tools: ["Java", "JavaScript", "React"],
+                experience: "4 Years",
+                contribution: [5, 12, 8, 15, 7, 3, 9],
+                followLink: "https://www.linkedin.com/in/erick-juma",
+                projects: ["portfolio", "blog", "ecommerce-site"]
+            },
+            // Add more people as needed...
+        ];
+
+        function createContributorCard(person) {
+            const card = document.createElement('div');
+            card.className = 'shadow-md hover:shadow-lg transition-all rounded-md p-6 bg-white';
+            
+            const contributionBars = person.contribution.map(contrib => `
+                <div class="activity-bar ${contrib > 10 ? 'high' : contrib > 5 ? 'medium' : contrib > 0 ? 'low' : 'none'}"></div>
+            `).join('');
+
+            card.innerHTML = `
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <img src="${person.imageUrl}" alt="${person.name}" class="w-24 h-24 rounded-full">
+                        <div class="ml-5">
+                            <h3 class="text-2xl font-bold text-gray-700">${person.name}</h3>
+                            <div class="flex gap-4">
+                                <p>
+                                    <span class="mr-2 text-gray-600">Experience:</span>
+                                    ${person.experience}
+                                </p>
+                                <div>${person.tools.join(", ")}</div>
+                            </div>
+                            <p>
+                                <span class="mr-2 text-gray-600">Contribution:</span>
+                                ${person.projects.map(project => `
+                                    <a href="#" class="text-blue-600 hover:underline mr-2">${project}</a>
+                                `).join(", ")}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="self-center">
+                        <div class="flex justify-between items-end space-x-4">
+                            <div class="activity-graph">
+                                ${contributionBars}
+                            </div>
+                            <a href="${person.followLink}" target="_blank" 
+                               class="bg-gray-200 text-gray-700 px-3 py-1 rounded-md hover:bg-gray-300 transition-colors">
+                                View Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function initializeContributors(showAll = false) {
+            const containerEl = document.getElementById('contributors-list');
+            containerEl.innerHTML = '';
+            
+            const displayPeople = showAll ? peopleDetails : peopleDetails.slice(0, 6);
+            
+            displayPeople.forEach(person => {
+                containerEl.appendChild(createContributorCard(person));
+            });
+        }
+
+        // Initialize with first 6 contributors
+        initializeContributors();
+
+        // Handle View All button
+        document.getElementById('view-all').addEventListener('click', function() {
+            initializeContributors(true);
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
