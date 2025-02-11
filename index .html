@@ -24,7 +24,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100">
 
     <header class="bg-gray-900 text-white py-4 ">
         <div class="container mx-auto flex justify-between items-center">
@@ -94,74 +94,139 @@
         </div>
     </header>
 
-    <section class="bg-gray-200 py-20 text-center" style="background image:(world-dotted-map.png)">
-        <h1 class="text-5xl font-bold mb-4">Build your satisfying MVP fas</h1>
-        <p class="text-lg mb-8">Email Address</p>
-        <div class="flex justify-center">
-            <input type="email" placeholder="yourname@mail.something"
-                class="border border-gray-300 rounded-md px-4 py-2 w-96 mr-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-4">
-                Signup for GitCash
-            </button>
-            <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded">
-                Enterprise SignUp
-            </button>
+    <section class="bg-gray-900 py-20 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('images/world-dotted-map.png');">
+        <div class=" bg-opacity-90 py-40 "> 
+            <h1 class="text-5xl font-bold mb-4 text-white">Build your satisfying MVP fas</h1>
+            <p class="text-lg mb-8 text-white">Email Address</p>
+            <div class="flex justify-center">
+                <input type="email" placeholder="yourname@mail.something"
+                    class="border border-gray-300 rounded-md px-4 py-2 w-96 mr-4">
+                <button class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded mr-4">
+                    Signup for GitCash
+                </button>
+                <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded">
+                    Enterprise SignUp
+                </button>
+            </div>
         </div>
     </section>
+    
 
     <section class="container mx-auto py-12">
         <h2 class="text-3xl font-bold mb-8">Most Paying Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 1" class="mb-4">
-                <h3 class="text-xl font-bold mb-2">Python Data Analysis</h3>
-                <p class="text-gray-700 mb-4">A data analysis project using Python and Pandas...</p>
-                <div class="flex justify-between items-center">
-                    <p class="text-gray-600">1 month ago</p>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Contribute
-                    </button>
+        <div class="relative max-w-full overflow-hidden">
+            <div class="flex gap-4 py-8">
+                <div class="flex gap-6 animate-scroll">
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-vuejs mr-2"></i>Vue.js Landing Page
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">A landing page built using Vue.js and Tailwind CSS...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">1 week ago</span>
+                            <button
+                                class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-java mr-2"></i>Java Spring Boot App
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">A web application built using Java Spring Boot...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">1 month ago</span>
+                            <button
+                                class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-python"></i>Python Data Analysis
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">A data analysis project using Python and Pandas...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">1 month ago</span>
+                            <button
+                                class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-angular"></i> Angular E-commerce
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">An e-commerce platform built with Angular...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">2 months ago</span>
+                            <button
+                                class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-react"></i>React Landing Page
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">A landing page built using Vue.js and Tailwind CSS...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">1 week ago</span>
+                            <button class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-node"></i>Nodejs App
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">A web application built using Java Spring Boot...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">1 month ago</span>
+                            <button class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-html5"></i>HTML Landing page
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">A data analysis project using Python and Pandas...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">1 month ago</span>
+                            <button class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white backdrop-blur-sm rounded-lg p-6 hover:ring-2 hover:ring-teal-400 transition-all w-[300px]">
+                        <h3 class="text-lg font-semibold mb-2 text-teal-400 truncate">
+                            <i class="fa-brands fa-js"></i> Fullstack site
+                        </h3>
+                        <p class="text-gray-400 mb-4 h-[48px] line-clamp-2">An e-commerce platform built with Angular...</p>
+                        <div class="flex justify-between items-center mt-auto">
+                            <span class="text-sm text-white">2 months ago</span>
+                            <button class="px-4 py-2 text-sm bg-teal-500 hover:bg-teal-400 rounded transition-colors whitespace-nowrap">
+                                Contribute
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 2" class="mb-4">
-                <h3 class="text-xl font-bold mb-2">Vue.js Admin Dashboard</h3>
-                <p class="text-gray-700 mb-4">An admin dashboard built using Vue.js...</p>
-                <div class="flex justify-between items-center">
-                    <p class="text-gray-600">2 months ago</p>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Contribute
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 3" class="mb-4">
-                <h3 class="text-xl font-bold mb-2">Angular E-commerce F</h3>
-                <p class="text-gray-700 mb-4">An e-commerce platform built using Angular...</p>
-                <div class="flex justify-between items-center">
-                    <p class="text-gray-600">1 month ago</p>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Contribute
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md p-6">
-                <img src="placeholder.png" alt="Project 4" class="mb-4">
-                <h3 class="text-xl font-bold mb-2">Fullstack MERN App</h3>
-                <p class="text-gray-700 mb-4">A fullstack web app built using MongoDB, Express,...</p>
-                <div class="flex justify-between items-center">
-                    <p class="text-gray-600">3 months ago</p>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        Contribute
-                    </button>
-                </div>
-            </div>
-
         </div>
-
 
         <div class="flex items-center max-w-7xl mx-auto px-4">
             <!-- Image on the left -->
@@ -334,46 +399,41 @@
 
 
 
-            <div class="flex items-center justify-between mb-6">
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-800">
-                        <p class="text-cyan-700">Cognosphere Dynamics</p>
-                        <p class="text-cyan-700">LLC Efficiency with</p>
-                        New Workflow Tools
-                    </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Left Column -->
+                <div class="space-y-6">
+                 
+                  <div class="">
+                    <h2 class="text-xl font-bold text-teal-300 mb-2">Cognosphere Dynamics LLC Efficiency <span class="text-black">Increased Efficiency with New Workflow Tools</span></h2>
+                  </div>
+          
+                 
+                  <div class="bg-purple-100 rounded-full p-2 shadow-md">
+                    <h2 class="ml-5 text-5xl font-bold text-black mb-2">500,000</h2>
+                    <p class="ml-5 text-black">successful deployments in the past year.</p>
+                  </div>
+          
+                 
+                  <div class="bg-purple-100 rounded-full p-2 shadow-md">
+                    <h2 class="ml-5 text-5xl font-bold text-black mb-2">8,000</h2>
+                    <p class="ml-5 text-black">active contributors.</p>
+                  </div>
                 </div>
-
-            </div>
-
-            <div class="mb-6">
-                <div class="bg-purple-100  rounded-lg p-4 mb-4 w-34">
-                    <div class="flex items-center">
-                        <span class="text-4xl font-bold text-purple-800 mr-2">500,000</span>
-                        <span class="text-gray-600">successful deployments in the past year</span>
-                    </div>
+          
+                <!-- Right Column (Rowspan) -->
+                <div class="md:row-span-3 bg-white rounded-lg p-8 shadow-md">
+                    <blockquote class="relative">
+                        <div class="text-2xl text-gray-900 mb-4">
+                          "The new workflow tools have streamlined our processes and significantly improved our team's efficiency. The results speak for themselves with a remarkable increase in successful deployments."
+                        </div>
+                        <footer class="mt-6">
+                          <div class="font-semibold text-gray-900">Francis Ssessaazi</div>
+                          <div class="text-gray-600">Chief Executive Officer</div>
+                          <div class="text-gray-600">Cognosphere Dynamics LLC</div>
+                        </footer>
+                      </blockquote>
                 </div>
-                <div class="bg-purple-100 rounded-lg p-4 w-42">
-                    <div class="flex items-center">
-                        <span class="text-4xl font-bold text-purple-800 mr-2">8,000</span>
-                        <span class="text-gray-600">active contributors</span>
-                    </div>
-                </div>
-                <div class="bg-gray-100 rounded-lg p-6">
-                    <div class="flex items-center">
-                        <p class="text-lg text-gray-800">
-                            The new workflow tools have streamlined our processes and significantly improved our team's
-                            efficiency. The results speak for themselves with a remarkable increase in successful
-                            deployments."
-                        </p>
-                    </div>
-
-
-                    <div class="mt-4">
-                        <p class="font-medium text-gray-800">Francis Ssessaazi,</p>
-                        <p class="text-gray-600">Chief Executive Officer</p>
-                        <p class="text-gray-600">Cognosphere Dynamics LLC</p>
-                    </div>
-                </div>
+              </div>
                 <div class="container mx-auto p-8">
                     <h1 class="text-3xl font-bold text-center mb-8">Developer Testimonials</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
